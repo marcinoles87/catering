@@ -1,13 +1,29 @@
 .container{
     width: 100vw;
     height: 70vh;
-    background-color: #fff;
     margin: 0;
     padding: 0;
    background-image: url(../img/header.jpg);
    background-repeat: no-repeat;
    background-position: center;
+   background-attachment: fixed;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
    
+}
 
+.header-logo{
+    background-color: rgb(17, 17, 45);
+    color:white;
+    flex-basis: 20%;
+}
 
+.header-nav-right{
+    flex-basis: 80%;
+
+}
+
+.header-main{
+    flex-basis:100%;
 }

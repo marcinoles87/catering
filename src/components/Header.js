@@ -9,8 +9,9 @@ class Header extends React.Component {
             <div className='container'>
                 <div className='header-logo'>
                     <a href='/'>
-                        <img src='../img/logo.png' alt='logo'></img>
+                        <img src='../header.jpg' alt='logo'></img>
                     </a>
+                    </div>
 
                 <nav className='header-nav-right'>
                     <ul>Menu
@@ -22,13 +23,15 @@ class Header extends React.Component {
                 </nav>
 
                 <div className='header-main'>
-                    <h1>Hello and Welcome !</h1>
+                    <h1>Hello , and Welcome !</h1>
                     <h4> This website is my second project , I hope se you enyoi it !
                         Search , Add and teaste with flavour with smile 
                     </h4>
+                    <button>Join To Me</button>
+                    <button> Teaste My Recipe</button>
                 </div>
 
-                </div>
+                
             </div>
         );
     }
