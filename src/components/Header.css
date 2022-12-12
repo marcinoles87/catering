@@ -1,9 +1,13 @@
-
-
-div{
+.container{
+    width: 100vw;
+    height: 70vh;
     background-color: #fff;
     margin: 0;
     padding: 0;
+   background-image: url(../img/header.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   
 
 
 }
