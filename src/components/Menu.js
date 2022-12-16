@@ -12,7 +12,7 @@ class Menu extends React.Component {
                 
                 
                 <div className='a'>1
-                    <img src='logo.png' alt='a-logo'></img>
+                    <img src='../img/header.jpg' alt='a-logo'></img>
                 </div>
                 
                 <div className='b'>2
