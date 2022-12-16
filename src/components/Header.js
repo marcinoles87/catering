@@ -1,6 +1,7 @@
 import React from 'react'
 
 import  './Header.css'
+import image from '../img/logo.png'
 
 
 
@@ -11,7 +12,7 @@ class Header extends React.Component {
             <div className='container'>
                 <div className='header-logo'>
                     <a href='/'>
-                        <img src='components/img/logo.png' alt='logo'></img>
+                        <img src={image} alt='a-logo' className='logo'></img>
                     </a>
                     </div>
 

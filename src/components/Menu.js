@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Menu.css'
+import image from '../img/logo.png'
 
 class Menu extends React.Component {
 
@@ -12,7 +13,7 @@ class Menu extends React.Component {
                 
                 
                 <div className='a'>1
-                    <img src='../img/header.jpg' alt='a-logo'></img>
+                    
                 </div>
                 
                 <div className='b'>2

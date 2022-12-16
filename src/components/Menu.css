@@ -8,16 +8,22 @@
 
 .a{
     flex-basis: 30%;
-    background-color: aqua;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(46, 30, 63);
 }
 
 .b{
     flex-basis: 30%;
-    background-color: rgb(37, 101, 101);
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(46, 30, 63);
 }
 
 .c{
     flex-basis: 30%;
-    background-color: rgb(26, 69, 69);
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(46, 30, 63);
 }
 
