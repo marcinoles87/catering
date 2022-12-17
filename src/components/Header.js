@@ -28,7 +28,7 @@ class Header extends React.Component {
                 <div className='header-main'>
                     <h1>Hello , and Welcome !</h1>
                     <h2> This website is my second project , I hope se you enyoi it ! <br></br>
-                        Search , Add and teaste with flavour with smile 
+                        Search , Add and teaste with flavour and smile 
                     </h2>
                     <button>Join To Me</button>
                     <button> Teaste My Recipe</button>
