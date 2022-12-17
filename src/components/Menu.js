@@ -10,9 +10,9 @@ class Menu extends React.Component {
     state = {  } 
     render() { 
         return (
-            <div className='menu-main'>
+        <div className='menu-main'>
                 
-                <div className='menu-card'>
+            <div className='menu-card'>
 
                 <div className='a'>
                     <h1>Fresh content</h1>
@@ -49,7 +49,7 @@ class Menu extends React.Component {
                     
                 </div>
 
-                </div>
+            </div>
                 
             </div>
         );
