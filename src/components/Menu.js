@@ -27,7 +27,7 @@ class Menu extends React.Component {
                     
                 </div>
                 
-                <div className='b'>
+                <div className='a'>
                     <h1>Mix flavour</h1>
                         <img src={image} className='menu-img'></img>
                     <p>Tease people you know well 
@@ -38,8 +38,8 @@ class Menu extends React.Component {
                     
                 </div>
                 
-                <div className='c'>
-                    <h1>Exaited teaste and smell</h1>
+                <div className='a'>
+                    <h1>Exaited teaste </h1>
                         <img src={image} className='menu-img'></img>
                     <p>Tease people you know well 
                         because you are more likely to be in 

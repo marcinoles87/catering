@@ -1,6 +1,6 @@
 .menu-main{
     background-color: white;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
@@ -20,6 +20,7 @@
 .a{
     width: 30%;
     margin: 20px;
+    padding: 50px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     /* border: 3px solid rgb(46, 30, 63); */
@@ -30,6 +31,7 @@
 .b{
     width: 30%;
     margin: 20px;
+    padding: 50px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     /* border: 3px solid rgb(46, 30, 63); */
@@ -38,6 +40,7 @@
 .c{
     width: 30%;
     margin: 20px;
+    padding: 50px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     /* border: 3px solid rgb(46, 30, 63); */
