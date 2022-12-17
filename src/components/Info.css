@@ -1,6 +1,17 @@
-.main-info{
+.info-wrapper{
+    position: relative;
+    margin: 0;
+    padding: 0;
     height: 70vh;
     background-color:rgb(255, 53, 114);
     color: white;
     
+}
+
+.info-main{
+    display: inline-block;
+    position: absolute;
+    top:30%;
+    left:30%;
+
 }

@@ -1,8 +1,11 @@
 body{
-    background-color: rgb(15, 47, 49);
+    background-color: rgb(50, 50, 50);
     margin: 0;
     padding: 0;
-    height: 3000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
     font-family: 'Montserrat', sans-serif;
 }
 
