@@ -16,7 +16,7 @@ class Menu extends React.Component {
 
                 <div className='a'>
                     <h1>Fresh content</h1>
-                        <img src={image}></img>
+                        <img src={image} className='menu-img'></img>
                     <p>Tease people you know well 
                         because you are more likely to be in 
                         tune with what is sensitive to them. Certain topics should 
@@ -29,7 +29,7 @@ class Menu extends React.Component {
                 
                 <div className='b'>
                     <h1>Mix flavour</h1>
-                        <img src={image}></img>
+                        <img src={image} className='menu-img'></img>
                     <p>Tease people you know well 
                         because you are more likely to be in 
                         tune with what is sensitive to them. Certain topics should 
@@ -40,7 +40,7 @@ class Menu extends React.Component {
                 
                 <div className='c'>
                     <h1>Exaited teaste and smell</h1>
-                        <img src={image}></img>
+                        <img src={image} className='menu-img'></img>
                     <p>Tease people you know well 
                         because you are more likely to be in 
                         tune with what is sensitive to them. Certain topics should 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header.js';
 import Menu from './components/Menu.js';
+import Info from './components/Info.js';
 
 import './App.css';
 
@@ -11,7 +12,8 @@ class App extends React.Component {
     return (
       <div>
     <Header></Header>
-    <Menu> </Menu>
+    <Menu></Menu>
+    <Info></Info>
     
 </div>
     );
