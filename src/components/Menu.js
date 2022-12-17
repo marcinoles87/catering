@@ -3,6 +3,7 @@ import React from 'react'
 import './Menu.css'
 import image from '../img/logo.png'
 
+
 class Menu extends React.Component {
 
 
@@ -13,16 +14,21 @@ class Menu extends React.Component {
                 
                 <div className='menu-card'>
 
-                <div className='a'>1
+                <div className='a'>
                     <h1>Fresh content</h1>
+
+                    
+                    
                 </div>
                 
-                <div className='b'>2
+                <div className='b'>
                     <h1>Mix flavour</h1>
+                    
                 </div>
                 
-                <div className='c'>3
+                <div className='c'>
                     <h1>Exaited teaste and smell</h1>
+                    
                 </div>
 
                 </div>
