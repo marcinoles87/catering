@@ -17,10 +17,10 @@ class Header extends React.Component {
                     </div>
 
                 <nav className='header-nav-right'>
-                    <ul>Menu
-                        <li>About Me</li>
-                        <li>Products</li>
-                        <li>Contact</li>
+                    <ul>
+                        <li><a href='/'>Products</a></li>
+                        <li><a href='/'>About Me</a></li>
+                        <li><a href='/'>Contact</a></li>
                     </ul>
 
                 </nav>
