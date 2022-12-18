@@ -1,4 +1,16 @@
 .gallery-wrapper{
+    padding-top: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-head{
+    font-size: 60px;
+}
+
+
+
+.gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
