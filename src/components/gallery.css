@@ -1,0 +1,14 @@
+.gallery-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.gallery-card{
+    width: 30%;
+    height: 40%;
+    background-color: rosybrown;
+    border: 3px solid red;
+}
