@@ -1,6 +1,7 @@
 import React from "react";
 
 import '../components/gallery.css'
+import image from '../img/logo.png'
 
 class Gallery extends React.Component {
     state = {  } 

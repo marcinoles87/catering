@@ -10,6 +10,8 @@
 
 
 
+
+
 .gallery{
     display: flex;
     flex-direction: row;
@@ -19,6 +21,8 @@
 }
 
 .gallery-card{
+    background-image: url(../img/logo.png);
+    background-position: center;
     width: 30%;
     height: 40%;
     background-color: rosybrown;
