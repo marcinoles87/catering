@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react' ;
+
+import '../components/contact.css'
 
 
 class Contact extends React.Component {
@@ -6,6 +8,7 @@ class Contact extends React.Component {
     render() { 
         return (
             <div className='contact-wrapper'>
+                
                 <div className='contact-link'>
 
                 </div>
