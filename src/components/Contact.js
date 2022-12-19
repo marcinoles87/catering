@@ -18,6 +18,14 @@ class Contact extends React.Component {
                     <form>
                         <label>Name</label>
                         <input></input>
+
+                        <label>Email</label>
+                        <input></input>
+
+                        <label>Adress</label>
+                        <input></input>
+
+                        <textarea></textarea>
                     </form>
                 </div>
 
