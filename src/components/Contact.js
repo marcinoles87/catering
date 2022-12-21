@@ -15,20 +15,31 @@ class Contact extends React.Component {
 
 
                 <div className='contact-form'>
-                    <form>
+                    <form className='form'>
+
+                        <div className='name'>
                         <label>Name</label>
                         <input className='contact-input-name' type='text'></input>
+                        </div>
 
+                        <div className='name'>
                         <label>Email</label>
                         <input className='contact-input-email'></input>
+                        </div>
 
+                        <div className='name'>
                         <label className='contact-input-adress'>Adress</label>
                         <input></input>
-                        
+                        </div>
+
+                        <div className='name'>
                         <label>Your message</label>
                         <textarea ></textarea>
+                        </div>
 
+                        <div className='name'>
                         <input type='submit'></input>
+                        </div>
                         
                     </form>
                 </div>
