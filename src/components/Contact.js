@@ -19,22 +19,22 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label>Name</label>
-                        <input className='contact-input-name' type='text'></input>
+                        <input className='contact-input' type='text'></input>
                         </div>
 
                         <div className='name'>
                         <label>Email</label>
-                        <input className='contact-input-email'></input>
+                        <input className='contact-input'></input>
                         </div>
 
                         <div className='name'>
-                        <label className='contact-input-adress'>Adress</label>
-                        <input></input>
+                        <label >Adress</label>
+                        <input className='contact-input'></input>
                         </div>
 
                         <div className='name'>
                         <label>Your message</label>
-                        <textarea ></textarea>
+                        <textarea className='contact-input' ></textarea>
                         </div>
 
                         <div className='name'>
