@@ -22,7 +22,9 @@ class Contact extends React.Component {
 
      handleOnChange = (e) =>{
         const value = e.target.value
+        const type = e.target.value
         console.log(value)
+        console.log(type)
 
         this.setState({
 
@@ -60,6 +62,7 @@ class Contact extends React.Component {
                         <div className='name'>
                         <label htmlFor='email'>Email
                         <input className='contact-input' 
+                        type='email'
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
@@ -68,12 +71,14 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label htmlFor='adress' >Adress
-                        <input className='contact-input'></input>
+                        <input className='contact-input'
+                        type='adress'></input>
                         </label></div>
 
                         <div className='name'>
                         <label htmlFor='message'>Your message
-                        <textarea className='contact-input' ></textarea>
+                        <textarea className='contact-input'
+                        type='message' ></textarea>
                         </label></div>
 
                         <div className='name'>
