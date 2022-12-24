@@ -1,4 +1,6 @@
-import React from 'react' ;
+import React  from 'react' ;
+import { useState } from 'react';
+
 
 import '../components/contact.css'
 
@@ -20,6 +22,11 @@ class Contact extends React.Component {
 
      handleOnChange = (e) =>{
         const value = e.target.value
+        console.log(value)
+
+        this.setState({
+
+        })
         
      }
 
@@ -52,7 +59,11 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label htmlFor='email'>Email
-                        <input className='contact-input'></input>
+                        <input className='contact-input' 
+                        value={this.state.value} 
+                        onChange={this.handleOnChange}>
+
+                        </input>
                        </label></div>
 
                         <div className='name'>
