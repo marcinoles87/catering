@@ -19,6 +19,7 @@ class Contact extends React.Component {
     
 
      handleOnChange = (e) =>{
+        const value = e.target.value
         
      }
 
@@ -39,7 +40,13 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label htmlFor='name'>Name
-                        <input className='contact-input' value={this.state.value} type='text'></input>
+                        <input 
+                        className='contact-input' 
+                        type='text'
+                        value={this.state.value} 
+                        onChange={this.handleOnChange}>
+
+                        </input>
                         </label>
                         </div>
 
