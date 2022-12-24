@@ -4,12 +4,25 @@ import '../components/contact.css'
 
 
 class Contact extends React.Component {
-    state = {  } 
+
+    
+
+    state = { 
+        name:'xxxx' ,
+        adress:'' ,
+
+     } 
+
+     handleOnChange = () =>{
+        
+     }
     render() { 
         return (
             <div className='contact-wrapper'>
                 
                 <div className='contact-link'>
+
+                    
 
                 </div>
 
@@ -19,7 +32,7 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label>Name</label>
-                        <input className='contact-input' type='text'></input>
+                        <input className='contact-input' value={this.state.value} type='text'></input>
                         </div>
 
                         <div className='name'>
