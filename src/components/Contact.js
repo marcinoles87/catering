@@ -8,14 +8,21 @@ class Contact extends React.Component {
     
 
     state = { 
-        name:'xxxx' ,
+        name:'' ,
+        email:'',
         adress:'' ,
+        message:'',
+
 
      } 
 
-     handleOnChange = () =>{
+    
+
+     handleOnChange = (e) =>{
         
      }
+
+
     render() { 
         return (
             <div className='contact-wrapper'>
@@ -31,24 +38,25 @@ class Contact extends React.Component {
                     <form className='form'>
 
                         <div className='name'>
-                        <label>Name</label>
+                        <label htmlFor='name'>Name
                         <input className='contact-input' value={this.state.value} type='text'></input>
+                        </label>
                         </div>
 
                         <div className='name'>
-                        <label>Email</label>
+                        <label htmlFor='email'>Email
                         <input className='contact-input'></input>
-                        </div>
+                       </label></div>
 
                         <div className='name'>
-                        <label >Adress</label>
+                        <label htmlFor='adress' >Adress
                         <input className='contact-input'></input>
-                        </div>
+                        </label></div>
 
                         <div className='name'>
-                        <label>Your message</label>
+                        <label htmlFor='message'>Your message
                         <textarea className='contact-input' ></textarea>
-                        </div>
+                        </label></div>
 
                         <div className='name'>
                         <input type='submit'></input>
