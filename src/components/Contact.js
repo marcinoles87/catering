@@ -27,6 +27,7 @@ class Contact extends React.Component {
         console.log(type)
 
         this.setState({
+            name:value
 
         })
         
