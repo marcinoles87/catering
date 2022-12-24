@@ -22,7 +22,7 @@ class Contact extends React.Component {
 
      handleOnChange = (e) =>{
         const value = e.target.value
-        const type = e.target.value
+        const type = e.target.type
         console.log(value)
         console.log(type)
 
