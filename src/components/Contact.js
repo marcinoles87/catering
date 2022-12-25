@@ -64,7 +64,7 @@ class Contact extends React.Component {
             <div className='contact-wrapper'>
                 
                 <div className='contact-link'>
-
+               
                     
 
                 </div>
