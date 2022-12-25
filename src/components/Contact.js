@@ -37,6 +37,7 @@ class Contact extends React.Component {
 
         if(value.length < 2) {
            console.log('za krotka nazwa')
+           alert('za krotka nazwa')
            
         }
         
