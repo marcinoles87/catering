@@ -21,15 +21,25 @@ class Contact extends React.Component {
     
 
      handleOnChange = (e) =>{
+        
         const value = e.target.value
         const type = e.target.type
+       
         console.log(value)
         console.log(type)
+        
 
         this.setState({
+            
             name:value
 
         })
+
+        if(value.length < 2) {
+           console.log('za krotka nazwa')
+           
+           
+        }
         
      }
 
@@ -73,7 +83,9 @@ class Contact extends React.Component {
                         <div className='name'>
                         <label htmlFor='adress' >Adress
                         <input className='contact-input'
-                        type='adress'></input>
+                        type='adress'
+                        value={this.state.value} 
+                        onChange={this.handleOnChange}></input>
                         </label></div>
 
                         <div className='name'>
@@ -88,6 +100,8 @@ class Contact extends React.Component {
                         
                     </form>
                 </div>
+
+                
 
             </div>
         );
