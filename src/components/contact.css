@@ -15,10 +15,16 @@
     flex-wrap: wrap;
     width: 40%;
     height: 60%;
-    border: 2px solid rgb(255, 53, 114);
+    
     border-radius: 20px;
     background-color: rgb(16, 36, 54);
     color: white;
+    transition: 1s;
+}
+
+.contact-form:hover{
+    border: 2px solid rgb(255, 53, 114);
+
 }
 
 .form{
@@ -43,6 +49,11 @@
     border-radius: 20px;
     background-color: rgb(16, 36, 54);
     color: white;
+    transition: 1s;
+}
+
+.contact-link:hover{
+    border: 2px solid rgb(255, 53, 114);
 }
 
 
