@@ -42,9 +42,20 @@ class Contact extends React.Component {
         
      }
 
-     handleOnSubmit = (e) => {
-        e.preventDefault()
-        console.log('dziala')
+     formValidation = (e) => {
+        
+        
+     }
+
+     handleOnSubmit = (e) => { 
+        
+        e.preventDefault();
+        console.log('dziala');
+        const validation = this.formValidation;
+       
+
+        
+
      }
 
 
