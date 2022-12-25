@@ -38,9 +38,13 @@ class Contact extends React.Component {
         if(value.length < 2) {
            console.log('za krotka nazwa')
            
-           
         }
         
+     }
+
+     handleOnSubmit = (e) => {
+        e.preventDefault()
+        console.log('dziala')
      }
 
 
@@ -91,11 +95,14 @@ class Contact extends React.Component {
                         <div className='name'>
                         <label htmlFor='message'>Your message
                         <textarea className='contact-input'
-                        type='message' ></textarea>
+                        type='text' 
+                        value={this.state.value} 
+                        onChange={this.handleOnChange}></textarea>
                         </label></div>
 
                         <div className='name'>
-                        <input type='submit'></input>
+                        <input type='submit'
+                        onSubmit={this.handleOnSubmit}></input>
                         </div>
                         
                     </form>
