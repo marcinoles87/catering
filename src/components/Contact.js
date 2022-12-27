@@ -37,27 +37,25 @@ class Contact extends React.Component {
         console.log(type)
         console.log(claName)
 
-        if(value.length < 2) {
+        
            
             this.setState({
-             message : 'za krotka nazwa'
+             name : value ,
             })
  
             
          }
         
-     }
+     
 
      
 
      
 
      formValidation = (e) => {
-     let value = e.target.value
+     
 
-        console.log('dziala')
-
-        if(value.length < 2) {
+        if(this.state.name.length < 2 && this.state.name.indexOf(' ')) {
            
             this.setState({
              message : 'za krotka nazwa'
@@ -79,7 +77,7 @@ class Contact extends React.Component {
         
 
      }
-
+    
 
     render() { 
         return (
@@ -93,7 +91,7 @@ class Contact extends React.Component {
 
 
                 <div className='contact-form'>
-                    <form className='form'>
+                    <form className='form' onSubmit={this.handleOnSubmit}>
 
                         <div className='name'>
                         <label htmlFor='name'>Name
