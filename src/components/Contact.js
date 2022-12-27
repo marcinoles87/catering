@@ -18,6 +18,12 @@ class Contact extends React.Component {
 
      } 
 
+     message = {
+        textValue : 'Nazwa musi być dluższa ' ,
+        emailValue : 'Nazwa musi zawierac @ ' ,
+        
+     }
+
     
 
      handleOnChange = (e) =>{
@@ -98,7 +104,7 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>{this.state.message}
+                        </input>{this.state.message} 
                         </label>
                         </div>
 
