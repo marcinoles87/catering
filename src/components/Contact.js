@@ -38,15 +38,24 @@ class Contact extends React.Component {
         })
 
         if(value.length < 2) {
+           
            console.log('za krotka nazwa')
-           alert('za krotka nazwa')
+           this.setState({
+            message : 'za krotka nazwa'
+           })
+
+           if(value.length > 2) {
+            this.setState({
+                message: ''
+            })
+           }
            
         }
         
      }
 
      formValidation = (e) => {
-        
+        console.log('dziala')
         
      }
 
@@ -84,7 +93,7 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>
+                        </input>{this.state.message}
                         </label>
                         </div>
 
