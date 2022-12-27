@@ -21,7 +21,8 @@ class Contact extends React.Component {
      message = {
         textValue : 'Nazwa musi być dluższa ' ,
         emailValue : 'Nazwa musi zawierac @ ' ,
-        
+        adressValue : 'Adres musi byc dluższy' ,
+
      }
 
     
@@ -35,16 +36,19 @@ class Contact extends React.Component {
         console.log(value)
         console.log(type)
         console.log(claName)
-        
 
-        this.setState({
+        if(value.length < 2) {
+           
+            this.setState({
+             message : 'za krotka nazwa'
+            })
+ 
             
-            name:value
-
-        })
-
+         }
         
      }
+
+     
 
      
 
@@ -59,11 +63,6 @@ class Contact extends React.Component {
              message : 'za krotka nazwa'
             })
  
-             if(value.length > 2) {
-             this.setState({
-                 message: ''
-             })
-            }
             
          }
         
