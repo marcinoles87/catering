@@ -24,9 +24,11 @@ class Contact extends React.Component {
         
         const value = e.target.value
         const type = e.target.type
+        const claName = e.target.className
        
         console.log(value)
         console.log(type)
+        console.log(claName)
         
 
         this.setState({
