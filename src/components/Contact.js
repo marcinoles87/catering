@@ -37,25 +37,29 @@ class Contact extends React.Component {
 
         })
 
-        if(value.length < 2) {
-           
-           console.log('za krotka nazwa')
-           this.setState({
-            message : 'za krotka nazwa'
-           })
-
-           if(value.length > 2) {
-            this.setState({
-                message: ''
-            })
-           }
-           
-        }
         
      }
 
+     
+
      formValidation = (e) => {
+     let value = e.target.value
+
         console.log('dziala')
+
+        if(value.length < 2) {
+           
+            this.setState({
+             message : 'za krotka nazwa'
+            })
+ 
+             if(value.length > 2) {
+             this.setState({
+                 message: ''
+             })
+            }
+            
+         }
         
      }
 
@@ -64,6 +68,7 @@ class Contact extends React.Component {
         e.preventDefault();
         console.log('dziala');
         const validation = this.formValidation;
+        validation()
        
 
         
@@ -104,7 +109,7 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>
+                        </input>{this.state.message}
                        </label></div>
 
                         <div className='name'>
@@ -112,7 +117,7 @@ class Contact extends React.Component {
                         <input className='contact-input'
                         type='adress'
                         value={this.state.value} 
-                        onChange={this.handleOnChange}></input>
+                        onChange={this.handleOnChange}></input>{this.state.message}
                         </label></div>
 
                         <div className='name'>
