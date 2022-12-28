@@ -103,6 +103,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
+                        {this.messageError.textValue} 
                         </label>
                         
                         </div>
@@ -114,7 +115,7 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>{this.state.message}
+                        </input>{this.messageError.emailValue} 
                        </label></div>
 
                         <div className='name'>
@@ -122,7 +123,7 @@ class Contact extends React.Component {
                         <input className='contact-input'
                         type='adress'
                         value={this.state.value} 
-                        onChange={this.handleOnChange}></input>{this.state.message}
+                        onChange={this.handleOnChange}></input>{this.messageError.adressValue} 
                         </label></div>
 
                         <div className='name'>
