@@ -39,12 +39,18 @@ class Contact extends React.Component {
 
         
            
+        if(value.length > 2 && this.state.name.indexOf(' ')) {
+           console.log('potwierdziam')
             this.setState({
-             name : value ,
+             textValue : 'jest ok',
+             
             })
- 
-            
-         }
+
+        }
+
+    }
+
+        
         
      
 
@@ -53,19 +59,17 @@ class Contact extends React.Component {
      
 
      formValidation = (e) => {
-     
+        e.preventDefault() 
 
-        if(this.state.name.length < 2 && this.state.name.indexOf(' ')) {
-           
-            this.setState({
-             message : 'za krotka nazwa',
-             
-            })
+        const validation = this.formValidation() ;
+        console.log(validation)
+
+        
  
             
          }
         
-     }
+     
 
      handleOnSubmit = (e) => { 
         
