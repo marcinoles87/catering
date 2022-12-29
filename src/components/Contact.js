@@ -41,10 +41,7 @@ class Contact extends React.Component {
            
         if(value.length > 2 && this.state.name.indexOf(' ')) {
            console.log('potwierdziam')
-            this.setState({
-             textValue : 'jest ok',
-             
-            })
+           
 
         }
 
@@ -52,36 +49,51 @@ class Contact extends React.Component {
 
 
 
-     formValidation = (e) => {
+     formValidation = () => {
         let user = false ;
         let adress = false ;
         let email = false ;
 
         if(this.state.name.length > 2 && this.this.state.name.indexOf(' ')){
             user = true;
+            
         }
 
-        if(this.state.name.length > 2 && this.this.state.name.indexOf(' ')){
-            user = true;
+        if(this.state.adress.length > 2 && this.this.state.adress.indexOf(' ')){
+            adress = true;
         }
-        
 
-       
+        if(this.state.email.indexOf('@') !== -1){
+            email = true;
+        }
 
         
- 
+        
+        return ({
+            user ,
+            adress ,
+            email
+        })
+
+        
             
          }
         
      
 
      handleOnSubmit = (e) => { 
+
+
         
         e.preventDefault();
         console.log('dziala');
         const validation = this.formValidation();
-        console.log(validation)
+        
+        
+        
+
        
+
 
         
 
