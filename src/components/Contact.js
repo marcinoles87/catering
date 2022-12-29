@@ -50,19 +50,23 @@ class Contact extends React.Component {
 
     }
 
-        
-        
-     
 
-     
-
-     
 
      formValidation = (e) => {
-        e.preventDefault() 
+        let user = false ;
+        let adress = false ;
+        let email = false ;
 
-        const validation = this.formValidation() ;
-        console.log(validation)
+        if(this.state.name.length > 2 && this.this.state.name.indexOf(' ')){
+            user = true;
+        }
+
+        if(this.state.name.length > 2 && this.this.state.name.indexOf(' ')){
+            user = true;
+        }
+        
+
+       
 
         
  
