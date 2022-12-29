@@ -23,6 +23,7 @@ class Contact extends React.Component {
         textValue : 'Nazwa musi być dluższa ' ,
         emailValue : 'Nazwa musi zawierac @ ' ,
         adressValue : 'Adres musi byc dluższy' ,
+        incorrect : true ,
 
      }
 
@@ -38,7 +39,13 @@ class Contact extends React.Component {
         console.log(type)
         console.log(claName)
 
-        
+        this.setState({
+            name : value
+        })
+
+        if(this.state.value > 2 ){
+            console.log('dziala')
+        }
 
     }
 
@@ -50,12 +57,12 @@ class Contact extends React.Component {
         let email = false ;
         let correct = false ;
 
-        if(this.state.name.length > 2 && this.this.state.name.indexOf(' ')){
+        if(this.state.name.length > 2 && this.state.name.indexOf(' ')){
             user = true;
             
         }
 
-        if(this.state.adress.length > 2 && this.this.state.adress.indexOf(' ')){
+        if(this.state.adress.length > 2 && this.state.adress.indexOf(' ')){
             adress = true;
         }
 
