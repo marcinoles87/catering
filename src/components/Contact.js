@@ -70,9 +70,11 @@ class Contact extends React.Component {
             adress = true;
         }
 
-        if(this.state.email.length >1 ) {
+        if(this.state.email.length > 1 ) {
             email = true;
         }
+
+        console.log(email)
 
         if(user && adress && email){
             correct = true;
@@ -114,13 +116,7 @@ class Contact extends React.Component {
 
         console.log('nie dziala')
         
-        
-        
-
-       
-
-
-        
+ 
 
      }
     
