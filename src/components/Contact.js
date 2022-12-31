@@ -57,28 +57,25 @@ class Contact extends React.Component {
         let email = false ;
         let correct = false ;
 
-        console.log(this.state.name.length)
+      
         if(this.state.name.length > 2){
             user = true;
             
-        }
-
-
-        console.log(user)
-
-        if(this.state.adress.length > 2 ){
-            adress = true;
         }
 
         if(this.state.email.length > 1 ) {
             email = true;
         }
 
-        console.log(email)
-
-        if(user && adress && email){
-            correct = true;
+        if(this.state.adress.length > 2 ){
+            adress = true;
         }
+
+        
+
+        
+
+       
 
         
         
@@ -106,7 +103,7 @@ class Contact extends React.Component {
         if(validation.correct) {
             console.log('dziala');
             this.setState({
-                name:'' ,
+                name: '' ,
                 email:'',
                 adress:'' ,
                 message:'',
@@ -114,7 +111,10 @@ class Contact extends React.Component {
             })
         }
 
-        console.log('nie dziala')
+        console.log(this.state.name)
+        console.log(this.state.email)
+        console.log(this.state.adress)
+
         
  
 
