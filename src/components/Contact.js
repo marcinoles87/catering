@@ -35,17 +35,19 @@ class Contact extends React.Component {
         const value = e.target.value
         const type = e.target.type
         const claName = e.target.className
+        const name = e.target.name
        
         console.log(value)
         console.log(type)
         console.log(claName)
+        console.log(name)
 
         this.setState({
            name : type
         })
 
         if(this.state.value > 2 ){
-            console.log('dziala')
+            
         }
 
     }
@@ -105,13 +107,6 @@ class Contact extends React.Component {
                 
             })
         }
-
-        console.log(this.state.name)
-        console.log(this.state.email)
-        console.log(this.state.adress)
-
-        
- 
 
      }
     
