@@ -41,7 +41,7 @@ class Contact extends React.Component {
         console.log(claName)
 
         this.setState({
-           [name] : type
+           name : type
         })
 
         if(this.state.value > 2 ){
