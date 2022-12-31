@@ -14,6 +14,7 @@ class Contact extends React.Component {
         email:'',
         adress:'' ,
         message:'',
+        
 
        
 
@@ -40,7 +41,7 @@ class Contact extends React.Component {
         console.log(claName)
 
         this.setState({
-            name : value
+           [name] : type
         })
 
         if(this.state.value > 2 ){
@@ -70,12 +71,6 @@ class Contact extends React.Component {
         if(this.state.adress.length > 2 ){
             adress = true;
         }
-
-        
-
-        
-
-       
 
         
         
@@ -139,6 +134,7 @@ class Contact extends React.Component {
                         <label htmlFor='name'>Name
                         <input 
                         className='contact-input' 
+                        name ='name'
                         type='text'
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
@@ -151,7 +147,8 @@ class Contact extends React.Component {
 
                         <div className='name'>
                         <label htmlFor='email'>Email
-                        <input className='contact-input' 
+                        <input className='contact-input'
+                        name = 'mail' 
                         type='email'
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
@@ -162,6 +159,7 @@ class Contact extends React.Component {
                         <div className='name'>
                         <label htmlFor='adress' >Adress
                         <input className='contact-input'
+                        name ='adress'
                         type='adress'
                         value={this.state.value} 
                         onChange={this.handleOnChange}></input>{this.messageError.adressValue} 
@@ -170,6 +168,7 @@ class Contact extends React.Component {
                         <div className='name'>
                         <label htmlFor='message'>Your message
                         <textarea className='contact-input'
+                        name='message'
                         type='text' 
                         value={this.state.value} 
                         onChange={this.handleOnChange}></textarea>
