@@ -171,8 +171,8 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>
-                        {this.state.name_incorrect ? 'imie jest za krotkie' :  'jest ok'} 
+                        </input><span>
+                        {this.state.name_incorrect ? 'imie jest za krotkie' :  'jest ok'}</span> 
                         </label>
                         
                         </div>
@@ -185,8 +185,8 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>
-                        {this.state.email_incorrect ? 'mail jest za krotkie' :  'jest ok'} 
+                        </input><span>
+                        {this.state.email_incorrect ? 'mail jest za krotkie' :  'jest ok'} </span>
                        </label></div>
 
                         <div className='name'>
@@ -195,8 +195,8 @@ class Contact extends React.Component {
                         name ='adress'
                         type='adress'
                         value={this.state.value} 
-                        onChange={this.handleOnChange}></input>
-                        {this.state.adress_incorrect ? 'adres jest za krotki' :  'jest ok'}  
+                        onChange={this.handleOnChange}></input><span>
+                        {this.state.adress_incorrect ? 'adres jest za krotki' :  'jest ok'}</span>  
                         </label></div>
 
                         <div className='name'>
