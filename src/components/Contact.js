@@ -147,7 +147,8 @@ class Contact extends React.Component {
                         value={this.state.value} 
                         onChange={this.handleOnChange}>
 
-                        </input>{this.messageError.emailValue} 
+                        </input>
+                        {this.state.incorrect ? 'tekst jest za krotki' :  'jest ok'} 
                        </label></div>
 
                         <div className='name'>
@@ -156,7 +157,8 @@ class Contact extends React.Component {
                         name ='adress'
                         type='adress'
                         value={this.state.value} 
-                        onChange={this.handleOnChange}></input>{this.messageError.adressValue} 
+                        onChange={this.handleOnChange}></input>
+                        {this.state.incorrect ? 'tekst jest za krotki' :  'jest ok'}  
                         </label></div>
 
                         <div className='name'>
