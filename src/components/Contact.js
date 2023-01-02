@@ -35,19 +35,21 @@ class Contact extends React.Component {
         
         const value = e.target.value
         let valueLength = value.length
+        let name = e.target.name
 
-        console.log(valueLength)
+        console.log(name)
        
-
+        if(name === name){
         if(valueLength > 2 ){
             this.setState({
-                
-                name: 'b',
-                incorrect: false,
+                incorrect:false
+               
              })
 
              
-        }
+        }}
+
+       
 
     }
 
