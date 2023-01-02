@@ -74,6 +74,17 @@ class Contact extends React.Component {
                      
                 }}
 
+                if(name === 'message'){
+                    if(valueLength > 2 ){
+                        this.setState({
+                            message_incorrect:false,
+                            message:value
+                           
+                         })
+            
+                         
+                    }}
+
        
 
     }
@@ -92,7 +103,7 @@ class Contact extends React.Component {
             
         }
 
-        if(this.state.email.length > 1 ) {
+        if(this.state.email.length > 1 && this.state.email.indexOf('@') !== -1) {
             email = true;
         }
 
@@ -143,7 +154,7 @@ class Contact extends React.Component {
                 
                 <div className='contact-link'>
                
-                    
+                    <p>Twoj wiadomosc : {this.state.message}</p>
 
                 </div>
 
@@ -161,7 +172,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
-                        {this.state.name_incorrect ? 'tekst jest za krotki' :  'jest ok'} 
+                        {this.state.name_incorrect ? 'imie jest za krotkie' :  'jest ok'} 
                         </label>
                         
                         </div>
@@ -175,7 +186,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
-                        {this.state.email_incorrect ? 'tekst jest za krotki' :  'jest ok'} 
+                        {this.state.email_incorrect ? 'mail jest za krotkie' :  'jest ok'} 
                        </label></div>
 
                         <div className='name'>
@@ -185,7 +196,7 @@ class Contact extends React.Component {
                         type='adress'
                         value={this.state.value} 
                         onChange={this.handleOnChange}></input>
-                        {this.state.adress_incorrect ? 'tekst jest za krotki' :  'jest ok'}  
+                        {this.state.adress_incorrect ? 'adres jest za krotki' :  'jest ok'}  
                         </label></div>
 
                         <div className='name'>
