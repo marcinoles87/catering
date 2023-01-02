@@ -42,12 +42,13 @@ class Contact extends React.Component {
         console.log(claName)
         console.log(name)
 
-        this.setState({
-           name : type
-        })
+        const incorrect = this.messageError.incorrect
+       
 
         if(this.state.value > 2 ){
-            
+            this.setState({
+                incorrect : !incorrect ,
+             })
         }
 
     }
@@ -135,7 +136,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
-                        {this.messageError.textValue} 
+                        {this.messageError.incorrect ? 'tekst jest za krotki' :  ''} 
                         </label>
                         
                         </div>
