@@ -14,7 +14,10 @@ class Contact extends React.Component {
         email:'',
         adress:'' ,
         message:'',
-        incorrect:true
+        name_incorrect:true ,
+        email_incorrect:true ,
+        adress_incorrect:true ,
+        message_incorrect:true ,
         
 
        
@@ -38,16 +41,38 @@ class Contact extends React.Component {
         let name = e.target.name
 
         console.log(name)
+
+        
        
-        if(name === name){
+        if(name === 'name'){
         if(valueLength > 2 ){
             this.setState({
-                incorrect:false
+                name_incorrect:false
                
              })
 
              
         }}
+
+        if(name === 'mail'){
+            if(valueLength > 2 ){
+                this.setState({
+                    email_incorrect:false
+                   
+                 })
+    
+                 
+            }}
+
+            if(name === 'adress'){
+                if(valueLength > 2 ){
+                    this.setState({
+                        adress_incorrect:false
+                       
+                     })
+        
+                     
+                }}
 
        
 
@@ -136,7 +161,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
-                        {this.state.incorrect ? 'tekst jest za krotki' :  'jest ok'} 
+                        {this.state.name_incorrect ? 'tekst jest za krotki' :  'jest ok'} 
                         </label>
                         
                         </div>
@@ -150,7 +175,7 @@ class Contact extends React.Component {
                         onChange={this.handleOnChange}>
 
                         </input>
-                        {this.state.incorrect ? 'tekst jest za krotki' :  'jest ok'} 
+                        {this.state.email_incorrect ? 'tekst jest za krotki' :  'jest ok'} 
                        </label></div>
 
                         <div className='name'>
@@ -160,7 +185,7 @@ class Contact extends React.Component {
                         type='adress'
                         value={this.state.value} 
                         onChange={this.handleOnChange}></input>
-                        {this.state.incorrect ? 'tekst jest za krotki' :  'jest ok'}  
+                        {this.state.adress_incorrect ? 'tekst jest za krotki' :  'jest ok'}  
                         </label></div>
 
                         <div className='name'>
