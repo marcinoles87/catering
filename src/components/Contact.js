@@ -1,5 +1,10 @@
 import React  from 'react' ;
 import { useState } from 'react';
+import logo1 from '../img/tripLogo.png'
+import logo2 from '../img/facebookLogo.png'
+import logo3 from '../img/instagramLogo.png'
+
+
 
 
 import '../components/contact.css'
@@ -154,7 +159,15 @@ class Contact extends React.Component {
                 
                 <div className='contact-link'>
                
-                    <p>Twoj wiadomosc : {this.state.message}</p>
+                    {/* <p>Twoj wiadomosc : {this.state.message}</p> */}
+
+                    <img src={logo1} alt='tripadvisor'></img>
+                    <img src={logo2} alt='facebooklogo'></img>
+                    <img src={logo3} alt='instagram'></img>
+
+
+
+                    <div className='link_logo'></div>
 
                 </div>
 

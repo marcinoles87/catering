@@ -45,10 +45,21 @@
 }
 
 .contact-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     height: 60%;
     transition: 1s;
 }
+
+.contact-link img{
+    width:60%;
+    height: 30%;
+}
+
+
 
 .contact-link:hover{
     border: 4px solid rgb(255, 53, 114);
