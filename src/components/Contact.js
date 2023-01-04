@@ -22,10 +22,7 @@ class Contact extends React.Component {
         name_incorrect:true ,
         email_incorrect:true ,
         adress_incorrect:true ,
-        message_incorrect:true ,
-        
-
-       
+        message_incorrect:true , 
 
      } 
 
@@ -45,9 +42,6 @@ class Contact extends React.Component {
         let valueLength = value.length
         let name = e.target.name
 
-        console.log(name)
-
-        
        
         if(name === 'name'){
         if(valueLength > 2 ){

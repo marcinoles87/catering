@@ -57,10 +57,13 @@
 .contact-link img{
     width:60%;
     height: 30%;
+    filter: grayscale(1);
+    transition: 0.5s;
 }
 
-
-
+.contact-link img:hover{
+    filter: grayscale(0);
+}
 
 
 span{
