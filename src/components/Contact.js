@@ -153,7 +153,7 @@ class Contact extends React.Component {
                 
                 <div className='contact-link'>
                
-                    {/* <p>Twoj wiadomosc : {this.state.message}</p> */}
+                   <h1>Check Us On and follow:</h1>
 
                     <img src={logo1} alt='tripadvisor'></img>
                     <img src={logo2} alt='facebooklogo'></img>

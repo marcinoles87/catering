@@ -47,7 +47,8 @@
 .contact-link{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     width: 40%;
     height: 60%;
@@ -55,8 +56,8 @@
 }
 
 .contact-link img{
-    width:60%;
-    height: 30%;
+    width:120px;
+    height: 90px;
     filter: grayscale(1);
     transition: 0.5s;
 }
