@@ -155,7 +155,7 @@ class Contact extends React.Component {
                
                    <h1>Check Us On and follow:</h1>
 
-                    <img src={logo1} alt='tripadvisor'></img>
+                    <img src={logo1} alt='tripadvisor' ></img>
                     <img src={logo2} alt='facebooklogo'></img>
                     <img src={logo3} alt='instagram'></img>
 
