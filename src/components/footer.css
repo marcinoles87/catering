@@ -1,0 +1,9 @@
+.newsletter {
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    filter: grayscale(1);
+    padding:35px;
+    color: white;
+}
