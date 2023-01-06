@@ -1,21 +1,24 @@
 import React from "react";
+import { useState } from "react";
 
 import '../components/gallery.css'
 import image from '../img/salmon.jpg'
 
 class Gallery extends React.Component {
 
+    
+
 
     state = {  } 
+
+    const [isActive , setIsActive] = useState('ss');
 
     handleOnClick = () => {
 
         console.log('dziala')
         const imageBig = document.getElementsByClassName('gallery-img')
         console.log(imageBig)
-        imageBig.classList.add('imageBig')
-        
-        
+      
 
     }
     render() { 
