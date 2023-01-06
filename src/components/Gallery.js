@@ -13,6 +13,7 @@ class Gallery extends React.Component {
         console.log('dziala')
         const imageBig = document.getElementsByClassName('gallery-img')
         console.log(imageBig)
+        imageBig.classList.add('imageBig')
         
         
 
