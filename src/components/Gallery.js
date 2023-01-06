@@ -11,13 +11,15 @@ class Gallery extends React.Component {
 
     state = {  } 
 
-    const [isActive , setIsActive] = useState('ss');
+    
 
-    handleOnClick = () => {
+    handleOnClick = (e) => {
 
         console.log('dziala')
         const imageBig = document.getElementsByClassName('gallery-img')
         console.log(imageBig)
+        imageBig.classList.add('imageBig')
+        
       
 
     }
