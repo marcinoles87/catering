@@ -17,10 +17,10 @@ class Gallery extends React.Component {
         const n = e.target.classList
         console.log(n)
         console.log('dziala')
-        const imageBig = document.querySelector('#image-big')
+        const imageBig = document.querySelector('.gallery-img')
         console.log(imageBig)
         imageBig.classList.toggle('imageBig')
-        n.classList.toggle('imageBig')
+        // n.classList.toggle('imageBig')
         
       
 
