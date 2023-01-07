@@ -16,9 +16,9 @@ class Gallery extends React.Component {
     handleOnClick = (e) => {
 
         console.log('dziala')
-        const imageBig = document.getElementsByClassName('gallery-img')
+        const imageBig = document.querySelector('#image-big')
         console.log(imageBig)
-        imageBig.classList.add('imageBig')
+        imageBig.classList.toggle('imageBig')
         
       
 
@@ -28,7 +28,7 @@ class Gallery extends React.Component {
             <div className="gallery-wrapper">
                 <h1 className="gallery-head"> Gallery of our Products</h1>
                 <div className="gallery">
-                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
+                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img" id='image-big'></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
