@@ -29,7 +29,7 @@ class Gallery extends React.Component {
                 <h1 className="gallery-head"> Gallery of our Products</h1>
                 <div className="gallery">
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img" id='image-big'></img></div>
-                <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
+                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img" id='image-big'></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} alt='salmon' className="gallery-img"></img></div>
