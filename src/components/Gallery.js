@@ -13,7 +13,21 @@ class Gallery extends React.Component {
     
 
 
-    state = {  } 
+    state = { 
+        
+     }
+
+     project = [
+        {
+            photo:{image} ,
+            text : 'salmon'
+        },
+
+        {
+            photo:{image2} ,
+            text : 'breakfast'
+        }
+     ]
 
     
 
@@ -23,6 +37,11 @@ class Gallery extends React.Component {
         const imageBig = document.querySelector('.gallery-img')
         console.log(imageBig)
         imageBig.classList.toggle('imageBig')
+
+        this.project.map((e)=> {
+            <div>{e.photo}</div>
+            console.log(e)
+        })
        
         
       
