@@ -39,8 +39,10 @@ class Gallery extends React.Component {
         imageBig.classList.toggle('imageBig')
 
         this.project.map((e)=> {
-            <div>{e.photo}</div>
+            <div>{e.photo} {e.text}</div>
+            
             console.log(e)
+
         })
        
         
