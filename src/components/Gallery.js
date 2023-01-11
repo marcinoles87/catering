@@ -26,7 +26,21 @@ class Gallery extends React.Component {
         {
             photo:{image2} ,
             text : 'breakfast'
+        },
+
+        
+        {
+            photo:{image3} ,
+            text : 'breakfast'
+        },
+
+        
+        {
+            photo:{image4} ,
+            text : 'breakfast'
         }
+
+
      ]
 
     
