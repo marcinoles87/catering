@@ -8,6 +8,25 @@ import image3 from '../img/dinner.jpg'
 import image4 from '../img/salad.jpg'
 
 
+const Gal = () => {
+
+    const showNam = true
+    const names = ['kev' , 'lev' , 'van']
+    const images  = names.map( name => {
+        <li key={name}>{name}</li>
+    })
+
+
+    return (
+
+
+        <div>
+            {showNam ?<li>{images}</li> : 'brak wyswietlenia'}
+            </div>
+    )
+}
+
+
 class Gallery extends React.Component {
 
     
@@ -64,6 +83,8 @@ class Gallery extends React.Component {
 
     }
     render() { 
+    
+
         return (
             <div className="gallery-wrapper">
                 <h1 className="gallery-head"> Gallery of our Products</h1>
@@ -74,7 +95,8 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image4} onClick={this.handleOnClick} alt='breakfast' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-               
+                <Gal />
+             
                 </div>
             </div>
         );
