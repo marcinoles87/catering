@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Test from "./test";
 
 import '../components/gallery.css'
 import image from '../img/salmon.jpg'
@@ -70,8 +71,8 @@ class Gallery extends React.Component {
 
         const showNam = true
         const names = ['kev' , 'lev' , 'van']
-        const images  = names.map( name => {
-            <li key={name}>{name}</li>
+        let images  = names.map( (name,index) => {
+            <li key={index}>{name}</li>
         })
     
 
@@ -85,7 +86,7 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image4} onClick={this.handleOnClick} alt='breakfast' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-                <p>{images}</p>
+                <Test></Test>
              
                 </div>
             </div>
