@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 import { useState } from "react";
-import Test from "./Test";
+
 
 import '../components/gallery.css'
 import image from '../img/salmon.jpg'
@@ -93,6 +93,7 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div>{images}</div>
+                
                 
              
              
