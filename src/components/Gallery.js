@@ -76,12 +76,10 @@ class Gallery extends React.Component {
             <li key={index}>{item}</li>
         )
 
-        const renderList = itemList.map((item, index) => 
-                                 <div key={index}>{item}</div>
-                               );
+      
 
-        console.log(renderList);
-        console.log(images)
+       
+        console.log(images);
     
 
         return (
@@ -95,6 +93,8 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div>{images}</div>
+                
+             
              
                 </div>
             </div>
