@@ -19,7 +19,8 @@ class Gallery extends React.Component {
 
 
     state = { 
-        
+
+        slide : 1,
         
      }
 
@@ -51,19 +52,20 @@ class Gallery extends React.Component {
 
     
 
-    handleOnClick = (e) => {
+    handleOnClick = () => {
     
-        console.log(e)
+        let im0 = image
+        let img = image2
+        let img2 = image3
+        let img3 = image4
+
+       
         const imageBig = document.querySelector('.gallery-img')
         console.log(imageBig)
-        imageBig.classList.toggle('imageBig')
 
-        this.project.map((e)=> {
-            <div>{e.photo} {e.text}</div>
-            
-            console.log(e)
+       
 
-        })
+      
        
         
       
@@ -93,7 +95,7 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image4} onClick={this.handleOnClick} alt='breakfast' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-                <div>{images}</div>
+                <div className="">{images}</div>
                 
                 
              
