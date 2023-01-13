@@ -20,6 +20,7 @@ class Gallery extends React.Component {
 
     state = { 
         
+        
      }
 
      project = [
