@@ -54,15 +54,14 @@ class Gallery extends React.Component {
 
     handleOnClick = () => {
     
-        let im0 = image
-        let img = image2
-        let img2 = image3
-        let img3 = image4
+        
 
        
         const imageBig = document.querySelector('.gallery-img')
+        
         console.log(imageBig)
-
+        imageBig.classList.toggle('imageBig')
+       
        
 
       
