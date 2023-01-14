@@ -1,6 +1,8 @@
 import React from "react";
 import { ReactDOM } from "react";
 
+import imgTest from '../img/salmon.jpg'
+
 class Test extends React.Component {
     state = { 
 
@@ -11,7 +13,8 @@ class Test extends React.Component {
      fruits = [
         {
             name : 'jablko' ,
-            price : 4.04
+            price : 4.04 ,
+            img : {imgTest}
         },
 
         {
@@ -23,7 +26,7 @@ class Test extends React.Component {
 
         const owoce = this.fruits.map( (item,index) => {
 
-        return <p>{item.name} {item.price}</p>
+        return <p key={item.price}>{item.name} {item.price} </p>
             
         })
 
