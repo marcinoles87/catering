@@ -8,6 +8,7 @@ import image from '../img/salmon.jpg'
 import image2 from '../img/breakfast.jpg'
 import image3 from '../img/dinner.jpg'
 import image4 from '../img/salad.jpg'
+import Test from "./Test";
 
 
 
@@ -95,7 +96,7 @@ class Gallery extends React.Component {
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
                 <div className="">{images}</div>
-                
+                <Test></Test>
                 
              
              
