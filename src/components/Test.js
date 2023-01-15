@@ -19,20 +19,23 @@ class Test extends React.Component {
 
         {
             name : 'pomarancz' ,
-            price : 3.04
+            price : 3.04 ,
+            img : {imgTest}
         }
      ]
     render() { 
 
-        const owoce = this.fruits.map( {item,price} => {
+        const owoce = this.fruits.map( (item) => {
 
-        return <li key={item.price}>{item.name} -cena : {item.price} </li>
+         <li key={item.price}>{item.name} -cena : {item.price}
+        <p>{item.img}</p></li> 
+        
             
         })
 
         console.log(owoce)
         return (
-            <div>test
+            <div>
                 {owoce}
             </div>
             
