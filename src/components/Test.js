@@ -27,9 +27,8 @@ class Test extends React.Component {
 
         const owoce = this.fruits.map( (item) => {
 
-         <li key={item.price}>{item.name} -cena : {item.price}
-        <p>{item.img}</p></li> 
-        
+            
+        return <li key={item.price}>{item.name} -cena : {item.price}</li>
             
         })
 
