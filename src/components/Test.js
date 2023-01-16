@@ -25,14 +25,13 @@ class Test extends React.Component {
      ]
     render() { 
 
-        const owoce = this.fruits.map( (item) => {
-
-            
-        return <li key={item.price}>{item.name} -cena : {item.price}</li>
+        const owoce = this.fruits.map( (item) => { 
+        return <li key={item.price}>{item.name} -cena : {item.price} {item.img}</li>
             
         })
 
         console.log(owoce)
+        console.log(this.fruits)
         return (
             <div>
                 {owoce}
