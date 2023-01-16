@@ -1,32 +1,37 @@
 import React from "react";
 import { ReactDOM } from "react";
+import ImageGallery from 'react-image-gallery'
 
 import imgTest from '../img/salmon.jpg'
+
+
+
 
 class Test extends React.Component {
     state = { 
 
-      
     
      } 
 
      fruits = [
         {
-            name : 'jablko' ,
-            price : 4.04 ,
-            img : {imgTest}
+            orginal: '../img/salmon.jpg',
+            thumbnail :  './img/salmon.jpg'
+           
+            
         },
 
         {
-            name : 'pomarancz' ,
-            price : 3.04 ,
-            img : {imgTest}
+           
+            orginal: '../img/salmon.jpg',
+            thumbnail :  './img/salmon.jpg'
+            
         }
      ]
     render() { 
 
-        const owoce = this.fruits.map( (item) => { 
-        return <li key={item.price}>{item.name} -cena : {item.price} {item.img}</li>
+        const owoce = this.fruits.map( ({name,price}) => { 
+        return <li key={price}>{name} -cena : {price} i </li>
             
         })
 
@@ -35,6 +40,7 @@ class Test extends React.Component {
         return (
             <div>
                 {owoce}
+                <ImageGallery items={this.fruits}></ImageGallery>
             </div>
             
         );
