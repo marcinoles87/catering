@@ -7,45 +7,36 @@ import imgTest from '../img/salmon.jpg'
 
 
 
-class Test extends React.Component {
-    state = { 
+const Test = () => {
+ 
 
-    
-     } 
-
-     fruits = [
+     const fruits = [
         {
             id:1,
             orginal: '../img/salmon.jpg',
-            thumbnail :  './img/salmon.jpg'
+            thumbnail : imgTest
            
             
         },
 
         {
-           id:2,
+            id:2,
             orginal: '../img/salmon.jpg',
-            thumbnail :  './img/salmon.jpg'
+            thumbnail :  imgTest
+
             
         }
      ]
-    render() { 
 
-        const owoce = this.fruits.map( ({item}) => { 
-        return <img key={item.id} src={requestAnimationFrame(item.thumbnail)}></img>
-            
-         } )
-
-        console.log(owoce)
-        console.log(this.fruits)
         return (
-            <div>
-                {owoce}
-                <ImageGallery items={this.fruits}></ImageGallery>
+          <div>
+            {fruits.map( (area) => { 
+                return <img key={area.id} src={area.thumbnail}></img>
+                    
+                 } )}
             </div>
-            
         );
-    }
+    
 }
  
 export default Test;
