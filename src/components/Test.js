@@ -12,15 +12,10 @@ const Test = () => {
  
 
      const fruits = [
-        {
-            id:1,
-            thumbnail : imgTest   
-        },
+        { id:1, thumbnail : imgTest },
+        { id:2, thumbnail : imgTest2 },
 
-        {
-            id:2,
-            thumbnail :  imgTest2 
-        }
+      
      ]
 
         return (
