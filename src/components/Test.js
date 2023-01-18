@@ -15,6 +15,7 @@ class Test extends React.Component {
 
      fruits = [
         {
+            id:1,
             orginal: '../img/salmon.jpg',
             thumbnail :  './img/salmon.jpg'
            
@@ -22,7 +23,7 @@ class Test extends React.Component {
         },
 
         {
-           
+           id:2,
             orginal: '../img/salmon.jpg',
             thumbnail :  './img/salmon.jpg'
             
@@ -30,10 +31,10 @@ class Test extends React.Component {
      ]
     render() { 
 
-        const owoce = this.fruits.map( ({name,price}) => { 
-        return <li key={price}>{name} -cena : {price} i </li>
+        const owoce = this.fruits.map( ({item}) => { 
+        return <img key={item.id} src={requestAnimationFrame(item.thumbnail)}></img>
             
-        })
+         } )
 
         console.log(owoce)
         console.log(this.fruits)
