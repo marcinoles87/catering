@@ -3,6 +3,7 @@ import { ReactDOM } from "react";
 import ImageGallery from 'react-image-gallery'
 
 import imgTest from '../img/salmon.jpg'
+import imgTest2 from '../img/salad.jpg'
 
 
 
@@ -13,27 +14,21 @@ const Test = () => {
      const fruits = [
         {
             id:1,
-            orginal: '../img/salmon.jpg',
-            thumbnail : imgTest
-           
-            
+            thumbnail : imgTest   
         },
 
         {
             id:2,
-            orginal: '../img/salmon.jpg',
-            thumbnail :  imgTest
-
-            
+            thumbnail :  imgTest2 
         }
      ]
 
         return (
-          <div>
-            {fruits.map( (area) => { 
-                return <img key={area.id} src={area.thumbnail}></img>
-                    
-                 } )}
+          <div className="gallery-card">
+            {fruits.map( (item) => { 
+                
+                return <img key={item.id} src={item.thumbnail} className='gallery-img'></img>
+                    } )}
             </div>
         );
     
