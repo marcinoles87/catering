@@ -5,9 +5,7 @@ import { useState } from "react";
 
 import '../components/gallery.css'
 import image from '../img/salmon.jpg'
-import image2 from '../img/breakfast.jpg'
-import image3 from '../img/dinner.jpg'
-import image4 from '../img/salad.jpg'
+
 import Test from "./Test";
 
 
@@ -25,31 +23,31 @@ class Gallery extends React.Component {
         
      }
 
-     project = [
-        {
-            photo:{image} ,
-            text : 'salmon'
-        },
+    //  project = [
+    //     {
+    //         photo:{image} ,
+    //         text : 'salmon'
+    //     },
 
-        {
-            photo:{image2} ,
-            text : 'breakfast'
-        },
-
-        
-        {
-            photo:{image3} ,
-            text : 'breakfast'
-        },
+    //     {
+    //         photo:{image2} ,
+    //         text : 'breakfast'
+    //     },
 
         
-        {
-            photo:{image4} ,
-            text : 'breakfast'
-        }
+    //     {
+    //         photo:{image3} ,
+    //         text : 'breakfast'
+    //     },
+
+        
+    //     {
+    //         photo:{image4} ,
+    //         text : 'breakfast'
+    //     }
 
 
-     ]
+    //  ]
 
     
 
@@ -89,16 +87,8 @@ class Gallery extends React.Component {
             <div className="gallery-wrapper">
                 <h1 className="gallery-head"> Gallery of our Products</h1>
                 <div className="gallery">
-                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-                <div className="gallery-card"><img src={image2} onClick={this.handleOnClick} alt='salad' className="gallery-img" ></img></div>
-                <div className="gallery-card"><img src={image3} onClick={this.handleOnClick} alt='dinner' className="gallery-img"></img></div>
-                <div className="gallery-card"><img src={image4} onClick={this.handleOnClick} alt='breakfast' className="gallery-img"></img></div>
-                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-                <div className="gallery-card"><img src={image} onClick={this.handleOnClick} alt='salmon' className="gallery-img"></img></div>
-                <div className="">{images}</div>
-                <Test></Test>
                 
-             
+                <Test></Test>
              
                 </div>
             </div>
