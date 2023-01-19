@@ -1,15 +1,12 @@
 import React from "react";
 import { ReactDOM } from "react";
-import ImageGallery from 'react-image-gallery'
+
 
 import img1 from '../img/salmon.jpg'
 import img2 from '../img/salad.jpg'
 import img3 from '../img/breakfast.jpg'
 import img4 from '../img/dinner.jpg'
 import img5 from '../img/salad.jpg'
-
-
-
 
 const Test = () => {
  
