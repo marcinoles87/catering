@@ -6,7 +6,7 @@ import { useState } from "react";
 import '../components/gallery.css'
 import image from '../img/salmon.jpg'
 
-import Test from "./Test";
+import Image from "./Image";
 
 
 
@@ -77,20 +77,11 @@ class Gallery extends React.Component {
             <li key={index}>{item}</li>
         )
 
-      
-
        
-        console.log(images);
-    
-
         return (
             <div className="gallery-wrapper">
                 <h1 className="gallery-head"> Gallery of our Products</h1>
-                <div className="gallery">
-                
-                <Test></Test>
-             
-                </div>
+                <Image></Image>
             </div>
         );
     }
