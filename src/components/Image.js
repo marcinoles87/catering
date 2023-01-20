@@ -8,7 +8,7 @@ import img3 from '../img/breakfast.jpg'
 import img4 from '../img/dinner.jpg'
 import img5 from '../img/salad.jpg'
 
-const Test = () => {
+const Image = () => {
  
 
      const fruits = [
@@ -33,4 +33,4 @@ const Test = () => {
     
 }
  
-export default Test;
+export default Image;
