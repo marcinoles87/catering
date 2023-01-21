@@ -155,9 +155,9 @@ class Contact extends React.Component {
                
                    <h1>Check Us On and follow:</h1>
 
-                    <img className='imgLink' src={logo1} alt='tripadvisor' ></img>
-                    <img className='imgLink' src={logo2} alt='facebooklogo'></img>
-                    <img className='imgLink' src={logo3} alt='instagram'></img>
+                    <a href='/'><img className='imgLink' src={logo1} alt='tripadvisor' ></img></a>
+                    <a href='/'><img className='imgLink' src={logo2} alt='facebooklogo'></img></a>
+                    <a href='/'><img className='imgLink' src={logo3} alt='instagram'></img></a>
 
 
 
