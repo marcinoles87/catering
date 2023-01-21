@@ -57,15 +57,20 @@
 
 .contact-link img{
     width:120px;
-    height: 90px;
+    height: auto;
     filter: grayscale(1);
+    border: 2px solid white;
     transition: 0.5s;
 }
 
 .contact-link img:hover{
     filter: grayscale(0);
+    
 }
 
+.imgLink{
+
+}
 
 span{
     color:red;
