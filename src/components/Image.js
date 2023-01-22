@@ -22,8 +22,11 @@ const Image = () => {
       
      ]
 
-     const handleOnClick = () =>{
-      console.log('dziala')
+     const handleOnClick = (e) =>{
+      const i = document.querySelector('.gallery-img')
+      i.classList.toggle('imageBig')
+      console.log(e)
+      
      }
 
         return (
@@ -31,7 +34,13 @@ const Image = () => {
           <div className="gallery" >
             {fruits.map( (item) => { 
                 
-                return <div className="gallery-card" key={item.id}><a  onClick={handleOnClick}><img  src={item.thumbnail} className='gallery-img' alt={item.info}></img></a></div>
+                return <div className="gallery-card" key={item.id}>
+
+                    <a  onClick={handleOnClick}>
+                       <img  src={item.thumbnail} className='gallery-img' alt={item.info}></img>
+                      
+                    </a>
+                      </div>
                     } )}
             </div >
         );
