@@ -17,6 +17,7 @@ const Image = () => {
         { id:3, thumbnail : img3 , info:'breakfast'},
         { id:4, thumbnail : img4 , info:'dinner'},
         { id:5, thumbnail : img5 , info:'salad2'},
+        { id:6, thumbnail : img5 , info:'salad2'},
 
       
      ]
@@ -26,7 +27,7 @@ const Image = () => {
           <div className="gallery" >
             {fruits.map( (item) => { 
                 
-                return <div className="gallery-card" key={item.id}><img  src={item.thumbnail} className='gallery-img' alt={item.info}></img></div>
+                return <div className="gallery-card" key={item.id}><a href="/"><img  src={item.thumbnail} className='gallery-img' alt={item.info}></img></a></div>
                     } )}
             </div >
         );

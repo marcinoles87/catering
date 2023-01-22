@@ -23,31 +23,7 @@ class Gallery extends React.Component {
         
      }
 
-    //  project = [
-    //     {
-    //         photo:{image} ,
-    //         text : 'salmon'
-    //     },
 
-    //     {
-    //         photo:{image2} ,
-    //         text : 'breakfast'
-    //     },
-
-        
-    //     {
-    //         photo:{image3} ,
-    //         text : 'breakfast'
-    //     },
-
-        
-    //     {
-    //         photo:{image4} ,
-    //         text : 'breakfast'
-    //     }
-
-
-    //  ]
 
     
 
@@ -60,28 +36,16 @@ class Gallery extends React.Component {
         
         console.log(imageBig)
         imageBig.classList.toggle('imageBig')
-       
-       
-
-      
-       
-        
-      
-
     }
     render() { 
 
-        const showNam = true
-        const itemList = ["kev" , "lev" , "van"];
-        const images  = itemList.map( (item,index) => 
-            <li key={index}>{item}</li>
-        )
+      
 
        
         return (
             <div className="gallery-wrapper">
                 <h1 className="gallery-head"> Gallery of our Products</h1>
-                <Image></Image>
+                    <Image></Image>
             </div>
         );
     }
