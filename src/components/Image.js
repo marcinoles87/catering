@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactDOM } from "react";
 
 
@@ -10,6 +10,7 @@ import img5 from '../img/salad.jpg'
 
 const Image = () => {
  
+   const [active,setActive] = useState(false);
 
      const fruits = [
         { id:1, thumbnail : img1 , info:'salmon'},
