@@ -24,6 +24,7 @@ const Image = () => {
 
      const handleOnClick = (e) =>{
       e.preventDefault()
+      const item = fruits[0]
       const i = document.querySelector('.gallery-img')
       i.classList.toggle('imageBig')
       console.log('dzial')
