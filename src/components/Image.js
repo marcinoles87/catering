@@ -24,11 +24,13 @@ const Image = () => {
      ]
 
      const handleOnClick = (e) =>{
-      e.preventDefault()
-      const item = fruits[0]
+      // e.preventDefault()
+      console.log(e)
+      alert('dziala',e)
+      
       const i = document.querySelector('.gallery-img')
       i.classList.toggle('imageBig')
-      console.log('dzial')
+      
       
      }
 
@@ -39,10 +41,10 @@ const Image = () => {
                 
                 return <div className="gallery-card" key={item.id}>
 
-                    <a href="/" >
+                    {/* <a href="/" > */}
                        <img  src={item.thumbnail} onClick={ () => handleOnClick(item.id)} className='gallery-img' alt={item.info}></img>
                       
-                    </a>
+                    {/* </a> */}
                       </div>
                     } )}
             </div >
