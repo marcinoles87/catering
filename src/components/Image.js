@@ -40,7 +40,7 @@ const Image = () => {
                 return <div className="gallery-card" key={item.id}>
 
                     <a href="/" >
-                       <img  src={item.thumbnail} onClick={handleOnClick} className='gallery-img' alt={item.info}></img>
+                       <img  src={item.thumbnail} onClick={ () => handleOnClick(item.id)} className='gallery-img' alt={item.info}></img>
                       
                     </a>
                       </div>
