@@ -20,17 +20,23 @@ const Image = () => {
         { id:5, thumbnail : img5 , info:'salad2'},
         { id:6, thumbnail : img5 , info:'salad2'},
 
-      
      ]
+   
+
+   
 
      const handleOnClick = (e) =>{
       // e.preventDefault()
+     
       console.log(e)
       
-      
+      if(e === e){
+         console.log('if')
       const i = document.querySelector('.gallery-img')
+      console.log(i)
       i.classList.toggle('imageBig')
       
+      }
       
      }
 
