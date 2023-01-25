@@ -26,7 +26,7 @@ const Image = () => {
      const handleOnClick = (e) =>{
       // e.preventDefault()
       console.log(e)
-      alert('dziala',e)
+      
       
       const i = document.querySelector('.gallery-img')
       i.classList.toggle('imageBig')
