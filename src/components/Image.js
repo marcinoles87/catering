@@ -10,7 +10,7 @@ import img5 from '../img/salad.jpg'
 
 const Image = () => {
  
-   const [active,setActive] = useState(false);
+   
 
      const fruits = [
         { id:1, thumbnail : img1 , info:'salmon'},
@@ -21,6 +21,8 @@ const Image = () => {
         { id:6, thumbnail : img5 , info:'salad2'},
 
      ]
+
+     let [active,setActive] = useState(fruits[0]);
    
 
    
@@ -29,14 +31,12 @@ const Image = () => {
       // e.preventDefault()
      
       console.log(e)
-      
-      if(e === e){
-         console.log('if')
+      setActive(fruits[e])
+      console.log(active)
       const i = document.querySelector('.gallery-img')
-      console.log(i)
       i.classList.toggle('imageBig')
       
-      }
+      
       
      }
 
