@@ -30,11 +30,9 @@ const Image = () => {
      const handleOnClick = (e) =>{
       // e.preventDefault()
      
-      console.log(e)
       setActive(fruits[e])
-      console.log(active)
-      const i = document.querySelector('.gallery-img')
-      i.classList.toggle('imageBig')
+      const i = document.getElementsByClassName('gallery-img')
+      i[e].classList.toggle('imageBig')
       
       
       
@@ -43,6 +41,7 @@ const Image = () => {
         return (
           
           <div className="gallery" >
+            
             {fruits.map( (item) => { 
                 
                 return <div className="gallery-card" key={item.id}>
@@ -53,6 +52,8 @@ const Image = () => {
                     {/* </a> */}
                       </div>
                     } )}
+
+                   
             </div >
         );
 
