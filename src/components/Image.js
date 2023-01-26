@@ -17,7 +17,7 @@ const Image = () => {
         { id:2, thumbnail : img2 , info:'salad'},
         { id:3, thumbnail : img3 , info:'breakfast'},
         { id:4, thumbnail : img4 , info:'dinner'},
-        { id:5, thumbnail : img5 , info:'salad2'},
+        { id:5, thumbnail : img2 , info:'salad2'},
         { id:6, thumbnail : img5 , info:'salad2'},
 
      ]
@@ -55,6 +55,8 @@ const Image = () => {
                     } )}
             </div >
         );
+
+        console.log(fruits)
     
 }
  
