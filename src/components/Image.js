@@ -29,10 +29,11 @@ const Image = () => {
 
      const handleOnClick = (e) =>{
       // e.preventDefault()
-     
-      setActive(fruits[e])
+     let index = e-1
+      setActive(fruits[index])
+      console.log(index)
       const i = document.getElementsByClassName('gallery-img')
-      i[e].classList.toggle('imageBig')
+      i[index].classList.toggle('imageBig')
       
       
       

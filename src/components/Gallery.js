@@ -29,7 +29,6 @@ class Gallery extends React.Component {
 
     handleOnClick = () => {
     
-        
 
        
         const imageBig = document.querySelector('.gallery-img')
