@@ -150,7 +150,7 @@ class Contact extends React.Component {
     render() { 
         return (
             <div className='contact-wrapper'>
-                
+               
                 <div className='contact-link'>
                
                    <h1>Check Us On and follow:</h1>
