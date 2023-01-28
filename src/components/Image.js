@@ -30,7 +30,7 @@ const Image = () => {
      const handleOnClick = (e) =>{
       // e.preventDefault()
      let index = e-1
-      setActive(fruits[index])
+      // setActive(fruits[index])
       console.log(index)
       const i = document.getElementsByClassName('gallery-img')
       i[index].classList.toggle('imageBig')
