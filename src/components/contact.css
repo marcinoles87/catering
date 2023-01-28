@@ -10,6 +10,11 @@
     
 }
 
+.contact-head{
+    font-size: 40px;
+    background-color: white;
+}
+
 .contact-form{
     display: flex;
     flex-direction: column;

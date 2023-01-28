@@ -149,7 +149,10 @@ class Contact extends React.Component {
 
     render() { 
         return (
+            <>
+            <h1 className='contact-head'>Stay With Us , Yoin Me Recipe and Smile</h1>
             <div className='contact-wrapper'>
+                
                
                 <div className='contact-link'>
                
@@ -226,6 +229,7 @@ class Contact extends React.Component {
                 
 
             </div>
+            </>
         );
     }
 }
