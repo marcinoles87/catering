@@ -4,13 +4,17 @@
     height: 100vh;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     background-color: white;
     
     
 }
 
 .contact-head{
+    margin: 0;
+    padding-top: 30px;
+    border-bottom: 2px solid rgb(255, 53, 114);
+    text-align: center;
     font-size: 40px;
     background-color: white;
 }
@@ -20,8 +24,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 40%;
-    height: 60%;
-    
+    height: 60%; 
     border-radius: 20px;
     background-color: rgb(16, 36, 54);
     color: white;
@@ -72,9 +75,7 @@
     
 }
 
-.imgLink{
 
-}
 
 span{
     color:red;
