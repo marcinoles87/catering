@@ -34,9 +34,7 @@ const Image = () => {
       console.log(index)
       const i = document.getElementsByClassName('gallery-img')
       i[index].classList.toggle('imageBig')
-      const closeTag = document.textContent("X")
-      i[index].appendChild(closeTag)
-      
+      const closeTag = document.createElement('p')
       
      }
 
