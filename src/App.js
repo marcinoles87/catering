@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Header from './components/Header.js';
 import Menu from './components/Menu.js';
 import Info from './components/Info.js';
@@ -23,9 +24,7 @@ class App extends React.Component {
     <Gallery></Gallery>
     <Contact></Contact>
     <Footer></Footer>
-    
-    
-</div>
+    </div>
     );
   }
 }

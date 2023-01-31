@@ -10,3 +10,16 @@ button{
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 600px){
+    .container{
+        width: 500px;
+        height: 100vh;
+        background-position: none;
+    }
+
+    button {
+        max-width: auto;
+        height: 20px;
+    }
+}
+    
