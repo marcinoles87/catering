@@ -164,7 +164,7 @@ class Contact extends React.Component {
 
 
 
-                    <div className='link_logo'></div>
+                   
 
                 </div>
 

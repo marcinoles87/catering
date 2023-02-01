@@ -10,6 +10,7 @@ button{
     font-family: 'Montserrat', sans-serif;
 }
 
+
 @media (max-width: 600px){
     .container{
         width: 500px;
@@ -19,7 +20,11 @@ button{
 
     button {
         max-width: auto;
-        height: 20px;
+        height: 30px;
+    }
+   
+    .contact-wrapper{
+        flex-direction: column;
     }
 }
     
