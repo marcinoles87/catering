@@ -26,5 +26,15 @@ button{
     .contact-wrapper{
         flex-direction: column;
     }
+    .gallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    .gallery-card{
+        justify-content: center;
+    }
 }
     
