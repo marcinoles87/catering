@@ -12,10 +12,31 @@ button{
 
 
 @media (max-width: 600px){
+
+    .gallery-head{
+        font-size:40px;
+    }
     .container{
         width: 500px;
         height: 100vh;
         background-position: none;
+        background-attachment: inherit;
+    }
+
+    .header-main h1{
+        margin-left: 0;
+        font-size: 30px;
+        
+        
+
+    }
+
+    .header-main h2{
+        font-size: 20px;
+    }
+
+    .header-logo{
+        padding-top: 0;
     }
 
     button {
@@ -35,6 +56,10 @@ button{
 
     .gallery-card{
         justify-content: center;
+    }
+
+    .gallery-card{
+        width: auto;
     }
 }
     
