@@ -75,5 +75,14 @@ button{
         width: auto;
     }
 
+    .info-wrapper{
+        display: flex;
+        background-size: inherit;
+    }
+
+    .info-main{
+        left:11%;
+    }
+
 }
     
