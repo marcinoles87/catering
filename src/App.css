@@ -58,12 +58,14 @@ button{
     }
    
     .contact-wrapper{
+        position: sticky;
         flex-direction: column;
     }
     .gallery{
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
+        height: auto;
         
     }
 
@@ -82,6 +84,21 @@ button{
 
     .info-main{
         left:11%;
+    }
+
+    .contact-head{
+        display:none;
+    }
+
+    
+
+    .contact-link{
+        width: auto;
+    }
+
+    .contact-form{
+        margin-top:30px;
+        width: auto;
     }
 
 }
