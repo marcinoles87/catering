@@ -68,11 +68,7 @@ button{
     }
 
    
-   
-    .contact-wrapper{
-        position: sticky;
-        flex-direction: column;
-    }
+
     .gallery{
         flex-direction: column;
         flex-wrap: nowrap;
@@ -102,14 +98,28 @@ button{
         left:11%;
     }
 
+
+        
+    .contact-wrapper{
+        height: auto;
+        padding: 10px;
+        position: sticky;
+        flex-direction: column;
+        justify-content:normal;
+    }
+    
+
     .contact-head{
         margin-bottom: 50px;
     }
 
     
-
     .contact-link{
         width: auto;
+    }
+
+    .contact-link a{
+        padding: 10px;
     }
 
     .contact-form{

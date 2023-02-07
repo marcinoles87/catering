@@ -6,7 +6,7 @@ const Footer = () => {
     return (  
         
             <div className="newsletter">
-                <h1>You place to follow us in Time :</h1>
+                <h1>Your place to follow us in Time :</h1>
                 <input placeholder="input your email"></input>
             </div>
         
