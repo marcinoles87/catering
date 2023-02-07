@@ -81,6 +81,10 @@ button{
         
     }
 
+    .gallery-wrapper{
+        height: auto;
+    }
+
     .gallery-card{
         justify-content: center;
     }
@@ -99,7 +103,7 @@ button{
     }
 
     .contact-head{
-        display:none;
+        margin-bottom: 50px;
     }
 
     
