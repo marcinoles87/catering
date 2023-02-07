@@ -56,6 +56,18 @@ button{
         display: flex;
         flex-direction: column;
     }
+
+    .menu-card{
+        flex-wrap: wrap;
+    }
+
+    .a{
+        width: auto;
+        margin: 0;
+        padding: 20px;
+    }
+
+   
    
     .contact-wrapper{
         position: sticky;

@@ -1,6 +1,5 @@
 .menu-main{
     background-color: white;
-    height: 60vh;
     display: flex;
     justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
@@ -10,7 +9,6 @@
 .menu-card{
     display: flex;
     width: auto;
-    height: 60vh;
     justify-content:center;
     text-align: center;
    
